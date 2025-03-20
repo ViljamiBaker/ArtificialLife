@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "ArtificalLife/src",
+        "JellyLife"
+    ]
+}

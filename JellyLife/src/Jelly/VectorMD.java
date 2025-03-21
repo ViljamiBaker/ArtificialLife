@@ -1,6 +1,5 @@
 package src.Jelly;
-// a basic class I made for many of my projects with java
-// makes some math easier
+
 public class VectorMD {
    public double M;
    public double D;

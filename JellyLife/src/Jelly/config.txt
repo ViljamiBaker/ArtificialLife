@@ -1,6 +1,6 @@
 CONFIG
-dont change anything but the values to use the config change UseConfig? to 1
-UseConfig? 1
+dont change anything but the values
+UseConfig? 0
 int GENERATIONC = 500 
 int MAX_ITER = 1000 
 int CREATURES = 200 
@@ -12,7 +12,7 @@ double LMAX = 1.5
 double LMIN = 0.5 
 double SMAX = 1.5 
 double SMIN = 0.5 
-int STATE_MAX = 131231123123123 
+int STATE_MAX = 131231 
 int STATE_MIN = 20 
 double MAXMUTATE = 1.0 
 double MAXBIGMUTATE = 20.0 

@@ -1,6 +1,5 @@
 package src.Jelly;
-// a basic class I made for many of my projects with java
-// makes some math easier
+
 public class Vector2D {
    public double x;
    public double y;

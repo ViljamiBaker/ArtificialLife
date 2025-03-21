@@ -52,10 +52,7 @@ public class CONFIG{
    
    public static void main(String[] args){
       JellyAi jai = new JellyAi();
-      // how two use: uncomment jai.fullSim(); to run a simulation or
-      // uncomment jai.simName("NAME OF SAVEDDNA HERE"); to playback a saved dna
-      // with the current config
-      jai.fullSim();
+      //jai.fullSim();
       //jai.simName("XFAR_1117_NYBRUHW^.274");
    }
 }

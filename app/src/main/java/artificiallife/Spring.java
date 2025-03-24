@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 // spring of two points that tries to move two points to a specific distance
 public class Spring{
    Point p1;

@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 // the dna of a jelly discribes the way it moves
 public class DNA implements Cloneable{
    double[][] vDesiredLengths;

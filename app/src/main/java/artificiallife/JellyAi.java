@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 
 import java.util.concurrent.TimeUnit;
 // the big boy

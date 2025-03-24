@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 // a square made of 6 springs and 4 points
 public class SoftSquare{
    Spring[] springs = new Spring[6];//{vertical right, vertical left, horizontal up, horizontal down, (ul -> br), (ur -> bl)}

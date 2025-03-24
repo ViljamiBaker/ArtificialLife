@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 // silly little guy
 public class JellyCreature{
    SoftSquare[] squares = new SoftSquare[16];

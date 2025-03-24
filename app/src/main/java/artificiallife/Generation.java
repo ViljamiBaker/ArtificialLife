@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 // stores and runs each generation of jellies
 public class Generation{
    DNA[] jcdnas;

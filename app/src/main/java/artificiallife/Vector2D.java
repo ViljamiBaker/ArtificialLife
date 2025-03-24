@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 
 public class Vector2D {
    public double x;

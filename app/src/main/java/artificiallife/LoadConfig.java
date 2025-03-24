@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 
 import java.io.File;
 import java.util.Scanner;
@@ -13,7 +13,7 @@ public class LoadConfig{
    }
    static void loadConfig(){
       try{
-         File datafile = new File(System.getProperty("user.dir") + "/JellyLife/src/Jelly/config.txt");
+         File datafile = new File(System.getProperty("user.dir") + "/app/src/main/java/artificiallife/config.txt");
          Scanner sc = new Scanner(datafile);
          sc.useDelimiter(" ");
          sc.nextLine();

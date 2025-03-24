@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 
 import javax.swing.JFrame;
 

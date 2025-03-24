@@ -1,9 +1,9 @@
-package src.Jelly;
+package artificiallife;
 public class CONFIG{
    // TO USE CONFIG VALUES IN THE TXT FILE SET UseConfig? TO 1
 
    // How many generations to run
-   public static int GENERATIONC = 20;
+   public static int GENERATIONC = 10;
    // How long each jelly gets to run for
    public static int MAX_ITER = 1000;
    // How many jellies there are in total
@@ -49,10 +49,13 @@ public class CONFIG{
    
    // Save only best and worst if false, otherwise save all of the jellies in the final generation
    public static boolean DUMP_FULL_DNA = false;
+
+   // Save only final generation if false, otherwise dump DUMP_FULL_DNA dnas every gen 
+   public static boolean DUMP_GENERATIONAL_DNA = false;
    
    public static void main(String[] args){
       JellyAi jai = new JellyAi();
-      //jai.fullSim();
+      jai.fullSim();
       //jai.simName("XFAR_1117_NYBRUHW^.274");
    }
 }

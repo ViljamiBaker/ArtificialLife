@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 // point in space
 public class Point{
    static Vector2D gravity = new Vector2D(0,CONFIG.GRAVP);

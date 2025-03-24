@@ -1,4 +1,4 @@
-package src.Jelly;
+package artificiallife;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 // saves / loads dna to savedDNA
 public class SaveLoadDNA{
    static void save(DNA dna, double score){
-      File datafile = new File(System.getProperty("user.dir") + "/JellyLife/src/Jelly/savedDNA/" + CONFIG.SCORING_CASE + "_" + (int)score +  "_" + dna.name + ".txt");
+      File datafile = new File(System.getProperty("user.dir") + "/app/src/main/java/artificiallife/savedDNA/" + CONFIG.SCORING_CASE + "_" + (int)score +  "_" + dna.name + ".txt");
       try{
          datafile.createNewFile();
          FileWriter fw = new FileWriter(datafile, true);
@@ -52,7 +52,7 @@ public class SaveLoadDNA{
    static DNA load(String name){
       try{
          System.out.println();
-         File datafile = new File(System.getProperty("user.dir") + "/JellyLife/src/Jelly/savedDNA/" + name + ".txt");
+         File datafile = new File(System.getProperty("user.dir") + "/app/src/main/java/artificiallife/savedDNA/" + name + ".txt");
          Scanner sc = new Scanner(datafile);
          sc.useDelimiter(",");
          String dname = sc.next();

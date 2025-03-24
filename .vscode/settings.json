@@ -2,5 +2,6 @@
     "java.project.sourcePaths": [
         "ArtificalLife/src",
         "JellyLife"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

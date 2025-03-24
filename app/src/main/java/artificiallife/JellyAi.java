@@ -149,6 +149,16 @@ public class JellyAi{
          DNA best = gen.getBest();
          System.out.println(simCreature(buildWithDNA(best),CONFIG.MAX_ITER));
          System.out.println("Done " + i);
+         if(CONFIG.DUMP_GENERATIONAL_DNA){
+            if(CONFIG.DUMP_FULL_DNA){
+               for(int i2 = 0; i2<gen.scores.length; i2++){
+                  SaveLoadDNA.save(gen.jcdnas[i], gen.scores[i]);
+               }
+            }else{
+               SaveLoadDNA.save(best, gen.scores[0]);
+               SaveLoadDNA.save(gen.jcdnas[gen.jcdnas.length-1], gen.scores[gen.scores.length-1]);
+            }
+         }
       }
       DNA best = gen.getBest();
       System.out.println(best.name);

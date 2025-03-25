@@ -33,6 +33,7 @@ public class LoadConfig{
          CONFIG.SMIN = Double.valueOf(loadValue(sc));
          CONFIG.STATE_MAX = Integer.parseInt(loadValue(sc));
          CONFIG.STATE_MIN = Integer.parseInt(loadValue(sc));
+         CONFIG.STATE_COUNT = Integer.parseInt(loadValue(sc));
          CONFIG.MAXMUTATE = Double.valueOf(loadValue(sc));
          CONFIG.MAXBIGMUTATE = Double.valueOf(loadValue(sc));
          CONFIG.MUTATE_CHANCE = Double.valueOf(loadValue(sc));

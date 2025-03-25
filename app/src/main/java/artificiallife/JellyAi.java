@@ -41,9 +41,14 @@ public class JellyAi{
          squares[x] = new SoftSquare[4];
          for(int y = 0; y<4; y++){
             squares[x][y] = new SoftSquare(cubeSprings[x][y],
-            new double[] {Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN,Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN,Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN},
-            new double[] {Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN,Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN,Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN}, 
-            new double[] {Math.random()*(CONFIG.SMAX-CONFIG.SMIN) + CONFIG.SMIN,Math.random()*(CONFIG.SMAX-CONFIG.SMIN) + CONFIG.SMIN,Math.random()*(CONFIG.SMAX-CONFIG.SMIN) + CONFIG.SMIN});
+            new double[CONFIG.STATE_COUNT],
+            new double[CONFIG.STATE_COUNT], 
+            new double[CONFIG.STATE_COUNT]);
+            for (int i = 0; i < CONFIG.STATE_COUNT; i++) {
+               squares[x][y].hDesiredLengths[i] = Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN;
+               squares[x][y].vDesiredLengths[i] = Math.random()*(CONFIG.LMAX-CONFIG.LMIN) + CONFIG.LMIN;
+               squares[x][y].stiffness[i] = Math.random()*(CONFIG.SMAX-CONFIG.SMIN) + CONFIG.SMIN;
+            }
          }
       }
       SoftSquare[] squarelong = new SoftSquare[16];

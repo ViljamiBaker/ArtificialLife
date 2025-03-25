@@ -3,11 +3,11 @@ public class CONFIG{
    // TO USE CONFIG VALUES IN THE TXT FILE SET UseConfig? TO 1
 
    // How many generations to run
-   public static int GENERATIONC = 10;
+   public static int GENERATIONC = 100;
    // How long each jelly gets to run for
    public static int MAX_ITER = 1000;
    // How many jellies there are in total
-   public static int CREATURES = 100;
+   public static int CREATURES = 500;
    
    // How much each vertex of a jelly slows in the air
    public static double DRAG = 0.99;
@@ -29,9 +29,11 @@ public class CONFIG{
    public static double SMIN = 0.5;
    
    // How long each state of a jelly can last
-   public static int STATE_MAX = 200;
+   public static int STATE_MAX = 100;
    // How short each state of a jelly can last
-   public static int STATE_MIN = 20;
+   public static int STATE_MIN = 10;
+   // How many states each jelly has
+   public static int STATE_COUNT = 10;
    
    // How far off a mutation can go from the current values in a jelly
    public static double MAXMUTATE = 1.0;
@@ -56,6 +58,6 @@ public class CONFIG{
    public static void main(String[] args){
       JellyAi jai = new JellyAi();
       jai.fullSim();
-      //jai.simName("XFAR_1117_NYBRUHW^.274");
+      //jai.simName("XFAR_597_DPVATSZ!.64");
    }
 }

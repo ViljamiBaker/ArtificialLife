@@ -1,12 +1,12 @@
 CONFIG
 dont change anything but the values
 UseConfig? 0 
-int GENERATIONC = 500 
+int GENERATIONC = 100 
 int MAX_ITER = 1000 
 int CREATURES = 200 
 double DRAG = 0.99 
-double GROUND_DRAG = 0.1 
-double GRAVP = -0.1 
+double GROUND_DRAG = 0.80 
+double GRAVP = -0.3 
 double FLOOR_HEIGHT = 30 
 double LMAX = 1.5 
 double LMIN = 0.5 
@@ -14,6 +14,7 @@ double SMAX = 1.5
 double SMIN = 0.5 
 int STATE_MAX = 131231 
 int STATE_MIN = 20 
+int STATE_COUNT = 5 
 double MAXMUTATE = 1.0 
 double MAXBIGMUTATE = 20.0 
 double MUTATE_CHANCE = 0.1 

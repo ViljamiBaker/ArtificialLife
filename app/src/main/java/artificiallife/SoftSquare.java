@@ -13,7 +13,7 @@ public class SoftSquare{
       this.hDesiredLengths = hDesiredLengths;
       this.stiffness = stiffness;
       this.springs = springs;
-      this.maxIndex = vDesiredLengths.length-1;
+      this.maxIndex = CONFIG.STATE_COUNT-1;
    }
    public void update(){
       index++;
